@@ -1,13 +1,18 @@
-import { Button } from "antd";
 import "antd/dist/reset.css";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SignIn from "./Pages/SignIn";
+import SignUp from "./Pages/SignUp";
+import Home from "./Pages/Home";
 function App() {
   return (
-    <div className="App m-5">
-      <h1>Hello World!</h1>
-      <Button type="primary" onClick={() => console.log("Hello")}>
-        Primary Button
-      </Button>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/SignIn" element={<SignIn />} />
+          <Route path="/SignUp" element={<SignUp />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
