@@ -1,5 +1,8 @@
+import { useSelector } from "react-redux";
+
 function Home() {
-  return <div>Home</div>;
+  const { user } = useSelector((state) => state.users);
+  return <div>{user && <h1>Welcome{user?.name}</h1>}</div>;
 }
 
 export default Home;
