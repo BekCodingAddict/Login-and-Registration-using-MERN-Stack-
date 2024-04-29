@@ -23,6 +23,7 @@ function SignUp() {
       message.error(error.message);
     }
   };
+
   return (
     <div className="body">
       <div className="main">

@@ -1,15 +1,33 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
+import { message } from "antd";
 
 function SignIn() {
-  const onSubmit = (event) => {
+  const navigate = useNavigate();
+
+  const onSubmit = async (event) => {
     event.preventDefault();
     const data = new FormData(event.target);
     const newData = {
-      userName: data.get("userName"),
+      email: data.get("email"),
       password: data.get("password"),
     };
     console.log(newData);
+
+    try {
+      const response = await axios.post("/api/users/login", newData);
+      if (response.data.success) {
+        message.success(response.data.message);
+        localStorage.setItem("token", response.data.data);
+        navigate("/");
+      } else {
+        message.error(response.data.message);
+      }
+    } catch (error) {
+      message.error(error.message);
+    }
   };
+
   return (
     <div className="body">
       <div className="main">
@@ -18,8 +36,8 @@ function SignIn() {
             <form onSubmit={onSubmit}>
               <h2>Login</h2>
               <div className="input-group">
-                <input type="text" name="userName" required></input>
-                <label>Username</label>
+                <input type="email" name="email" required></input>
+                <label>Email</label>
               </div>
               <div className="input-group">
                 <input type="password" name="password" required></input>
