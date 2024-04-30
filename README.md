@@ -1,4 +1,10 @@
 # Login-and-Registration-using-MERN-Stack
+- [x] ### About:
+  - In MERN stack development, the login and registration system typically refers to the implementation of user authentication and authorization functionalities using MongoDB, Express.js, React.js, and Node.js. Here's a brief overview of how it's typically done:
+  - MongoDB: MongoDB is used as the database to store user information such as usernames, passwords (usually hashed for security), email addresses, and any other relevant data.
+  - Express.js: Express.js is used to create the server-side logic and APIs (Application Programming Interfaces) for handling user authentication and registration requests. It's common to use libraries like Passport.js for implementing authentication strategies such as local authentication (using username and password) or OAuth (for social media authentication).
+  - React.js: React.js is used to create the user interface (UI) for the login and registration forms. These forms typically collect user input such as username, email, and password and send requests to the server for authentication or registration.
+Node.js: Node.js is used as the server runtime environment to handle HTTP requests from the frontend (React.js) and interact with the database (MongoDB). It runs the Express.js application and serves as the backend logic for user authentication and registration.
 
 - [x] <b>Tools</b>:
   - [ ] Front-End:
