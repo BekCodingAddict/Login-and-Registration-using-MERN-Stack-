@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Login-and-Registration-using-MERN-Stack-/static/css/main.32c1ff23.css",
+    "main.js": "/Login-and-Registration-using-MERN-Stack-/static/js/main.ae74e818.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/Login-and-Registration-using-MERN-Stack-/static/js/787.c4e7f8f9.chunk.js",
+    "index.html": "/Login-and-Registration-using-MERN-Stack-/index.html",
+    "main.32c1ff23.css.map": "/Login-and-Registration-using-MERN-Stack-/static/css/main.32c1ff23.css.map",
+    "main.ae74e818.js.map": "/Login-and-Registration-using-MERN-Stack-/static/js/main.ae74e818.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/Login-and-Registration-using-MERN-Stack-/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32c1ff23.css",
+    "static/js/main.ae74e818.js"
+  ]
+}
