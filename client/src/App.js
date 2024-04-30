@@ -8,7 +8,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route
             path="/"
