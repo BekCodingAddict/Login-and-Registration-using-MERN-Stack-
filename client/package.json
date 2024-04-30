@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "homepage": "https://BekCodingAddict.github.io/Login-and-Registration-using-MERN-Stack-",
-=======
-  "homepage": "https://bekcodingaddict.github.io/Login-and-Registration-using-MERN-Stack-",
->>>>>>> 5406a30c85744eb1a3158aaeae5ccfac9d6e870b
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -58,5 +54,5 @@
   "main": "index.js",
   "author": "",
   "license": "ISC",
-  "proxy": "http://localhost:4000/"
+  "proxy": "http://localhost:9000/"
 }
